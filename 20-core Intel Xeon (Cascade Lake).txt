@@ -1,0 +1,186 @@
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+Address sizes:       46 bits physical, 48 bits virtual
+CPU(s):              40
+On-line CPU(s) list: 0-39
+Thread(s) per core:  1
+Core(s) per socket:  20
+Socket(s):           2
+NUMA node(s):        2
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               85
+Model name:          Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+Stepping:            7
+CPU MHz:             800.829
+CPU max MHz:         3900.0000
+CPU min MHz:         800.0000
+BogoMIPS:            4200.00
+Virtualization:      VT-x
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            1024K
+L3 cache:            28160K
+NUMA node0 CPU(s):   0-19
+NUMA node1 CPU(s):   20-39
+Flags:               fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cdp_l3 invpcid_single intel_ppin ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx rdt_a avx512f avx512dq rdseed adx smap clflushopt clwb intel_pt avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req pku ospke avx512_vnni md_clear flush_l1d arch_capabilities
+
+icpc (ICC) 19.1.3.304 20200925
+Copyright (C) 1985-2020 Intel Corporation.  All rights reserved.
+
+
+icpc main.cpp -O0
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:    66058, gflops: 0.593192
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:   134372, gflops: 0.599852
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:     1976, gflops: 0.624174
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:     3967, gflops: 0.614696
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:      118, gflops: 0.627176
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:      237, gflops: 0.620316
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:       10, gflops: 0.625873
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:       20, gflops: 0.615135
+
+
+icpc main.cpp -O1
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:    66058, gflops: 2.22775
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:   134372, gflops: 2.59756
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:     1976, gflops: 2.00829
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:     3967, gflops: 2.03794
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:      118, gflops: 1.95633
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:      237, gflops: 1.96091
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:       10, gflops: 1.90334
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:       20, gflops: 1.71618
+
+
+icpc main.cpp -O2
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:   660589, gflops: 11.2648
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:  1343724, gflops: 8.4182
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:    19762, gflops: 13.9454
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:    39674, gflops: 8.40713
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:     1186, gflops: 13.3463
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:     2374, gflops: 6.72729
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:      100, gflops: 6.51969
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:      200, gflops: 3.24758
+
+
+icpc main.cpp
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:   660589, gflops: 11.3561
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:  1343724, gflops: 8.44218
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:    19762, gflops: 13.648
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:    39674, gflops: 8.23895
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:     1186, gflops: 13.1967
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:     2374, gflops: 6.72086
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:      100, gflops: 6.53583
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:      200, gflops: 3.24821
+
+
+icpc main.cpp -O3
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:   660589, gflops: 11.3606
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:  1343724, gflops: 8.40659
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:    19762, gflops: 13.6301
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:    39674, gflops: 8.27994
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:     1186, gflops: 13.2671
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:     2374, gflops: 6.72443
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:      100, gflops: 6.53974
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:      200, gflops: 3.25318
+
+
+icpc main.cpp -O3 -msse4.1 -xSSE4.1
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:   660589, gflops: 12.3226
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:  1343724, gflops: 7.33903
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:    19762, gflops: 14.0849
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:    39674, gflops: 6.98653
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:     1186, gflops: 13.1925
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:     2374, gflops: 6.20044
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:      100, gflops: 6.54419
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:      200, gflops: 3.25439
+
+
+icpc main.cpp -O3 -msse4.2 -xSSE4.2
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:   660589, gflops: 11.1775
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:  1343724, gflops: 7.75922
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:    19762, gflops: 13.8874
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:    39674, gflops: 7.46964
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:     1186, gflops: 13.3799
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:     2374, gflops: 6.67675
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:      100, gflops: 6.5377
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:      200, gflops: 3.26156
+
+
+icpc main.cpp -O3 -mavx -xAVX
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:   660589, gflops: 13.0521
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:  1343724, gflops: 8.62625
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:    19762, gflops: 17.4023
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:    39674, gflops: 9.47875
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:     1186, gflops: 13.2128
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:     2374, gflops: 6.63495
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:      100, gflops: 6.6047
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:      200, gflops: 3.32186
+
+
+icpc main.cpp -O3 -march=core-avx2 -xcore-avx2
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:   660589, gflops: 16.3309
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:  1343724, gflops: 11.9473
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:    19762, gflops: 21.875
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:    39674, gflops: 12.5809
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:     1186, gflops: 13.275
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:     2374, gflops: 6.66712
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:      100, gflops: 6.7871
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:      200, gflops: 3.40979
+
+
+icpc main.cpp -O3 -xcommon-avx512
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:   660589, gflops: 26.4475
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:  1343724, gflops: 14.9301
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:    19762, gflops: 26.8279
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:    39674, gflops: 14.4158
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:     1186, gflops: 13.2397
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:     2374, gflops: 6.60722
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:      100, gflops: 7.30575
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:      200, gflops: 3.65478
+
+
+icpc main.cpp -O3 -AVX512
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:   660589, gflops: 11.3957
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:  1343724, gflops: 8.41531
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:    19762, gflops: 13.8873
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:    39674, gflops: 8.36975
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:     1186, gflops: 13.2691
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:     2374, gflops: 6.65085
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:      100, gflops: 6.53111
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:      200, gflops: 3.24647
+
+
+icpc main.cpp -O3 -xhost
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:   660589, gflops: 16.4056
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:  1343724, gflops: 14.9357
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:    19762, gflops: 21.5557
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:    39674, gflops: 12.3131
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:     1186, gflops: 13.2451
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:     2374, gflops: 6.66725
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:      100, gflops: 6.74489
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:      200, gflops: 3.38566
+
+
+icpc main.cpp -O3 -xhost -restrict -alias-const -funroll-loops -no-ansi-alias
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:   660589, gflops: 16.1836
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:  1343724, gflops: 14.9099
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:    19762, gflops: 22.6685
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:    39674, gflops: 12.0454
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:     1186, gflops: 13.2418
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:     2374, gflops: 6.66727
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:      100, gflops: 6.74245
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:      200, gflops: 3.38739
+
+
+icpc main.cpp -O3 -xhost -parallel
+Data type: f, Memory size, kB:     30, Matrix size:   87, iterations number:   660589, gflops: 1.74114
+Data type: d, Memory size, kB:     30, Matrix size:   61, iterations number:  1343724, gflops: 1.77854
+Data type: f, Memory size, kB:    992, Matrix size:  503, iterations number:    19762, gflops: 6.16203
+Data type: d, Memory size, kB:    990, Matrix size:  355, iterations number:    39674, gflops: 8.8035
+Data type: f, Memory size, kB:  16480, Matrix size: 2053, iterations number:     1186, gflops: 52.5765
+Data type: d, Memory size, kB:  16471, Matrix size: 1451, iterations number:     2374, gflops: 158.916
+Data type: f, Memory size, kB: 195253, Matrix size: 7069, iterations number:      100, gflops: 27.3252
+Data type: d, Memory size, kB: 195234, Matrix size: 4998, iterations number:      200, gflops: 23.4129
+
+
