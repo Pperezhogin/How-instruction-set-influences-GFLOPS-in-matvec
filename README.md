@@ -1,7 +1,8 @@
 # How-instruction-set-influences-GFLOPS-in-matvec
 
 Let you have Intel compiler (icpc for c++), and some modern CPU, and you want to check how instruction set on this CPU influences on GFLOPS this CPU produces.\
-Here SSE, AVX, AVX2, AVX512 instructions are examined.
+Here SSE, AVX, AVX2, AVX512 instructions are examined in matrix-vector multiplication problem for float/double data type\
+and matrix sizes fitting L1, L2, L3 cache for given 12 core processor.
 
 Usage:
 ~~~
